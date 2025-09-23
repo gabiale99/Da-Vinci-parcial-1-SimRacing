@@ -557,6 +557,11 @@ main {
           p {
             color: var(--color-3);
             margin-bottom: 15px;
+
+            strong {
+              color: var(--color-1);
+              font-weight: normal;
+            }
           }
         }
 
@@ -569,7 +574,7 @@ main {
         }
 
         img {
-          width: 30%;
+          width: 100%;
           border: 3px solid var(--color-1);
           border-radius: 8px;
         }
@@ -581,6 +586,7 @@ main {
 
   @media screen and (max-width: 430px) {
     .section {
+      max-width: 100%;
       .section-2 {
         .h2 {
           text-align: center;
@@ -608,9 +614,22 @@ main {
   @media screen and (min-width: 431px) and (max-width: 1024px) {
     .section {
       .section-2 {
+        text-align: center;
+
         .container-experience {
+          flex-direction: column;
+          align-items: center;
+
+          .container-experience-text {
+            font-size: 25px;
+          }
+
+          .img-derecha {
+            margin-bottom: 40px;
+          }
+
           img {
-            width: 40%;
+            width: 70%;
           }
         }
       }
